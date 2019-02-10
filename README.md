@@ -3,7 +3,7 @@
 
 _Hallo!_
 
-This project creates a REST API with [NodeJS](https://nodejs.org/en/), [Express](http://expressjs.com/) and it's setup to use [AWS S3 + DynamoDB](https://aws.amazon.com/).
+This project creates a REST API with [NodeJS](https://nodejs.org/en/), [Express](http://expressjs.com/) and it's configured to use [AWS S3 + DynamoDB](https://aws.amazon.com/).
 
 *(An instance of this server is currently being hosted in a AWS-EC2 machine. Its endpoints are being used on the [front-end project](https://github.com/meendoo/exam-image-gallery-upload/tree/dev). Previously all requests were being made directly on the front-end and data was being hosted on [Firebase Cloud Firestore](https://firebase.google.com/products/firestore/) and [Firebase Cloud Storage](https://firebase.google.com/products/storage/))*
 
@@ -11,7 +11,12 @@ Cheers!
 
 ## Getting started
 
-Before running any scripts, you'll have to create a `.env` file in your project root folder and fill in the variables below:
+First install project packages. On your terminal, run:
+`yarn`
+
+If you don't have yarn installed, see [how you can do it](https://yarnpkg.com/en/docs/install).
+
+Before starting the server, you'll have to create a `.env` file in your project root folder and fill in the variables below:
 
 ```
 AWS_ACCESS_KEY_ID=''
@@ -21,7 +26,7 @@ AWS_BUCKET_NAME=''
 AWS_TABLE_NAME=''
 ```
 
-In order to do that you must do the following steps:
+In order to do that you must go through the following steps:
 
 1. Create an account on [AWS](https://console.aws.amazon.com/).
 2. Look for IAM (Identity and Access Management) under AWS services and add a new user.
